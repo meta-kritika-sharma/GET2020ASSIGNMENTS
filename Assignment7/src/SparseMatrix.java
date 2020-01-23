@@ -8,10 +8,10 @@
 */
 import java.util.*;
 
-public class SparseMatrix {
-	private int[][] sparseMatrixArray;
-	private int row;
-	private int column;
+public final class SparseMatrix {
+	private final int[][] sparseMatrixArray;
+	private final int row;
+	private final int column;
 	
 	public SparseMatrix(int[][] userArray) throws Exception{
 		/* Constructor
