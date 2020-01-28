@@ -1,20 +1,20 @@
 public class Point {
 
-	int x_coordinate;
-	int y_coordinate;
+	double x_coordinate;
+	double y_coordinate;
 
-	public Point(int x_coordinate, int y_coordinate) {
-		this.x_coordinate = x_coordinate;
-		this.y_coordinate = y_coordinate;
+	public Point(double xCoord, double yCoord) {
+		this.x_coordinate = xCoord;
+		this.y_coordinate = yCoord;
 	}
 
-	public int getXCoordinate() {
+	public double getXCoordinate() {
 		//Method to return x coordinate.
 		
 		return x_coordinate;
 	}
 
-	public int getYCoordinate() {
+	public double getYCoordinate() {
 		//Method to return y coordinate.
 		
 		return y_coordinate;

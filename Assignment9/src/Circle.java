@@ -50,6 +50,17 @@ public class Circle implements Shape {
 		return (float) (2 * Math.PI * radius);
 	}
 
+	private Point getCenter() {
+		double slope = Math.atan(originOfShape.getYCoordinate() / originOfShape.getXCoordinate());
+		//H^2 = B^2 + L^2
+		double distOfOrigin = Math.sqrt(originOfShape.getYCoordinate() * originOfShape.getYCoordinate() + originOfShape.getXCoordinate() * originOfShape.getXCoordinate());
+		double distOfCenter = radius + distOfOrigin;
+		double xCoord = distOfCenter * Math.cos(slope);
+		double yCoord = distOfCenter * Math.sin(slope);
+		Point center = new Point(xCoord, yCoord);
+		return center;
+		}
+
 	@Override
 	public boolean isPointEnclosed(Point point) throws Exception {
 		/* Method to check if a point is enclosed in a shape.
@@ -60,15 +71,16 @@ public class Circle implements Shape {
 			throw new Exception("Point invalid");
 		}
 
+		Point centerOfCircle = getCenter();
 		float temp1 = (float) Math.pow(
-				(point.x_coordinate - originOfShape.x_coordinate), 2);
+				(point.x_coordinate - centerOfCircle.x_coordinate), 2);
 		float temp2 = (float) Math.pow(
-				(point.y_coordinate - originOfShape.y_coordinate), 2);
-		if ((Math.sqrt(temp1 + temp2)) >= (2 * radius)) {
-			return true;
+				(point.y_coordinate - centerOfCircle.y_coordinate), 2);
+		if ((Math.sqrt(temp1 + temp2)) >= (radius)) {
+			return false;
 		}
 
-		return false;
+		return true;
 	}
 
 	@Override
