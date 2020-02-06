@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>login</title>
+<style>
+#div1, #div2, #div3 {
+	margin-bottom: 20px;
+}
+
+fieldset{
+margin:auto;
+width:40%;
+}
+legend{
+margin:auto}
+
+#formdiv{
+width:30%;
+margin:auto;
+}
+</style>
+
+<script src="script.js"></script>
+</head>
+<body>
+
+	<div>
+		<fieldset>
+			<legend>Login</legend>
+
+			<div id="formdiv">
+				<form action="login" method="post" onSubmit="return validateLogin()">
+					<div id="div1">
+						<input type="email" name="login" id="login" placeholder="Enter login id">
+					</div>
+
+					<div id="div2">
+						<input type="password" placeholder="Enter password"
+							name="password" id="password">
+					</div>
+
+					<div id="div3">
+						<input type="submit" value="Login" name="loginButton">
+					</div>
+
+				</form>
+
+				<p>Or</p>
+				<div>
+					<input type="button"
+						onclick="location.href = 'employeeRegistration.html'"
+						name="registerButton" value="Register">
+				</div>
+			</div>
+		</fieldset>
+	</div>
+	
+	
+</body>
+</html>

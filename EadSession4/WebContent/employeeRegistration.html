@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Employee Registration</title>
+
+<style>
+fieldset{
+width:50%;
+margin:auto;}
+
+legend{
+margin:auto;}
+
+form{
+width:27%;
+margin:auto;
+}
+
+div{
+margin-bottom:10px;}
+
+</style>
+
+<script src="script.js"></script>
+</head>
+<body>
+	<div>
+		<fieldset>
+			<legend>Employee Registration Form</legend>
+			<form action="Registration" method="post" onsubmit="return validateRegForm()">
+				<div>Name</div>
+				<div>
+					<input type="text" name="employeeName" id="employeeName"
+						placeholder="Enter your name">
+				</div>
+				<div>Gender</div>
+				<div>
+					<input type="radio" name="gender" value="Male" id="maleRadio">Male <input
+						type="radio" name="gender" value="Female" id="femaleRadio">Female
+				</div>
+				<div>E- Mail Id</div>
+				<div>
+					<input type="text" name="mailId" id= "mailId" placeholder="Enter your mail id">
+				</div>
+				<div>Password</div>
+				<div>
+					<input type="password" placeholder="Enter your password"
+						name="password" id="password">
+				</div>
+				<div>Confirm Password</div>
+				<div>
+					<input type="password" placeholder="Enter your password again"
+						name="confirmPassword" id="Cpassword">
+				</div>
+				<div>Organization</div>
+				<div>
+					<select name="organisation">
+						<option value="Company1">Company1</option>
+						<option value="Company2">Company2</option>
+						<option value="Company3">Company3</option>
+						<option value="Company4">Company4</option>
+					</select>
+				</div>
+				<div margin-top="3px">
+					<input type="submit" name="employeeRegister">
+				</div>
+			</form>
+		</fieldset>
+	</div>
+
+</body>
+</html>
