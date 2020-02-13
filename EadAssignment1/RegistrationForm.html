@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="Css/styles.css" />
+    <title>
+
+        Metacube Parking System
+    </title>
+
+    <script src="Javascript/scripts.js"></script>
+</head>
+
+<body>
+    <fieldset>
+        <legend id="formTitle">Employee Registration Form</legend>
+        <form id="EmpRegForm">
+            <table id="EmployeeRegistrationTable">
+
+                <td>Name</td>
+                <td><input type="text" placeholder="Enter your name" id="employeeName" required></td>
+                <td><span id="nameError"></span></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <input type="radio" name="Gender" id="maleRadio">Male
+                        <input type="radio" name="Gender" id="femaleRadio">Female
+                    </td>
+                    <td><span id="genderError"></span></td>
+                </tr>
+                <tr>
+                    <td>
+                        E-Mail Id
+                    </td>
+                    <td>
+
+                        <input type="text" placeholder="Enter your mail id" id="mailid" required/>
+                    </td>
+                    <td>
+                        <span id="mailError"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Contact
+                    </td>
+                    <td>
+                        <input type="number" placeholder="Enter your contact details" id="contact" required>
+                    </td>
+                    <td><span id="contactError"></span></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" placeholder="Enter your password" id="password" required/></td>
+                    <td><span id="passwordError"></span></td>
+                </tr>
+                <tr>
+                    <td>
+                        Confirm Password
+                    </td>
+                    <td>
+                        <input type="password" placeholder="Confirm your password" id="confirmPassword" required>
+                    </td>
+                    <td><span id="confirmPasswordError"></span></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td> <input type="button" value="Submit" id="submitRegForm" onclick="return validateEmpRegForm()">
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+        <form id="vehicleRegForm">
+            <table id="vehicleRegistrationTable">
+                <tr>
+                    <td>Vehicle Name</td>
+                    <td><input type="text" placeholder="Enter name of your vehicle" id="vehicleName" required></td>
+                    <td><span id="vehicleNameError"></span></td>
+                </tr>
+                <tr>
+                    <td>Type Of Vehicle</td>
+                    <td>
+                        <select id="typeOfVehicle">
+                        <option selected hidden>Choose vehicle</option>
+                        <option value="1" name="type">Cycle</option>
+                        <option value="2" name="type">MotorCycle</option>
+                        <option value="3" name="type">Four Wheelers</option>
+                    </select>
+                    </td>
+                    <td><span id="vehicleTypeError"></span></td>
+                </tr>
+                <tr>
+                    <td>
+                        Vehicle Number
+                    </td>
+                    <td><input type="text" id="vehicleNumber" placeholder="Enter vehicle number"></td>
+                    <td><span id="vehicleNumberError"></span> </td>
+                </tr>
+                <tr>
+                    <td>Employee Id</td>
+                    <td><input type="text" id="employeeId" disabled></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><textarea placeholder="Enter description of your vehicle." id="description" required></textarea></td>
+
+
+                    <td colspan="2"><span id="descriptionError"></span></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="button" value="Submit" onclick="return validateVehicleRegForm()"></td>
+                </tr>
+            </table>
+        </form>
+        <form id="showPass">
+            <div id="passOptions">
+                <table id="showPassTable">
+                    <tr>
+                        <td>
+
+                            <input type="radio" name="pass" id="dailyPassRadio">Daily</td>
+                        <td>
+                            <input type="text" id="dailyPass"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" name="pass" id="monthlyPassRadio">Monthly</td>
+                        <td><input type="text" id="monthlyPass"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" name="pass" id="yearlyPassRadio">Yearly</td>
+                        <td>
+                            <input type="text" id="yearlyPass"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="INR" onclick="toInr()"></td>
+                        <td><input type="button" value="USD" onclick="toUsd()"></td>
+                        <td><input type="button" value="YEN" onclick="toYen()"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="button" value="Get Pass" onclick="return display()"></td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+        <table id="displayTable">
+            <tr>
+                <td>Name</td>
+                <td><input type="text" id="name"></td>
+            </tr>
+            <tr>
+                <td>E-Mail Id</td>
+                <td><input type="text" id="mail"></td>
+            </tr>
+            <tr>
+                <td>Contact</td>
+                <td><input type="text" id="contactDetails"></td>
+            </tr>
+            <tr>
+                <td>Vehicle Name</td>
+                <td><input type="text" id="nameOfVehicle"></td>
+            </tr>
+            <tr>
+                <td>Vehicle Number</td>
+                <td><input type="text" id="numberOfVehicle"></td>
+            </tr>
+            <tr>
+                <td>Total Pass Cost</td>
+                <td><input type="text" id="finalPriceText"></td>
+            </tr>
+        </table>
+
+    </fieldset>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+td {
+    padding: 5px;
+}
+
+#EmployeeRegistrationTable,
+#vehicleRegistrationTable,
+#showPassTable,
+#displayTable {
+    padding: 5px;
+    margin: auto;
+    border-collapse: separate;
+    border-spacing: 0 15px;
+}
+
+#vehicleRegForm {
+    display: none;
+}
+
+#showPass {
+    display: none;
+}
+
+fieldset {
+    width: 700px;
+    margin: auto;
+}
+
+fieldset legend {
+    text-align: center;
+}
+
+textarea {
+    width: 100%;
+}
+
+#passOptions {
+    text-align: center;
+}
+
+#descriptionError {
+    width: 100%;
+}
+
+#displayTable {
+    display: none;
+}
+
+span {
+    border-color: black;
+}
+
+#displayTable {
+    width: 50%;
+    margin: auto;
+}
