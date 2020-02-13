@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<form id="showPass" action="showpass" method="post">
+		<div id="passOptions">
+			<div>
+				<input type="radio" name="pass" id="dailyPassRadio" value="Daily">Daily <input
+					type="text" id="dailyPass">
+			</div>
+			<div>
+				<input type="radio" name="pass" id="monthlyPassRadio" value="Monthly">Monthly
+
+				<input type="text" id="monthlyPass">
+			</div>
+			<div>
+				<input type="radio" name="pass" id="yearlyPassRadio" value="Yearly">Yearly
+				<input type="text" id="yearlyPass">
+			</div>
+			<div>
+				<input type="button" value="INR" onclick="toInr()"> <input
+					type="button" value="USD" onclick="toUsd()"> <input
+					type="button" value="YEN" onclick="toYen()">
+			</div>
+			<div>
+				<input type="submit" value="Get Pass">
+			</div>
+			
+			<div>
+			<input type="hidden" name="hiddenid" id="hiddenid">
+			</div>
+										
+			<div>
+			<input type="hidden" name="hiddenvehicle" id="hiddenvehicle">
+			</div>
+
+		</div>
+	</form>
+<script src="script.js"></script>
+
+</body>
+</html>

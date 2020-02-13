@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Insert title here</title>
+
+<style>
+fieldset {
+	width: 50%;
+	margin: auto;
+}
+
+legend {
+	margin: auto;
+}
+
+form {
+	width: 27%;
+	margin: auto;
+}
+
+div {
+	margin-bottom: 10px;
+}
+</style>
+</head>
+<body>
+	<fieldset>
+		<legend>Vehicle Registration form</legend>
+		<form name="vehicleRegForm" action="vehicleRegistration" method="post">
+			<div>Vehicle Name</div>
+			<div>
+				<input type="text" placeholder="Enter name of your vehicle"
+					name="vehicleName" required>
+			</div>
+
+
+			<div>Type Of Vehicle</div>
+			<div>
+				<select name="typeOfVehicle">
+					<option value="Cycle" name="type">Cycle</option>
+					<option value="MotorCycle" name="type">MotorCycle</option>
+					<option value="FourWheeler" name="type">Four Wheelers</option>
+				</select>
+			</div>
+
+
+			<div>Vehicle Number</div>
+			<div>
+				<input type="text" name="vehicleNumber"
+					placeholder="Enter vehicle number" required>
+			</div>
+
+
+			<div>Employee Id</div>
+			<div>
+				<input type="text" name="employeeId" id="employeeId" readonly>
+			</div>
+			<div>Description</div>
+			<div>
+				<textarea placeholder="Enter description of your vehicle."
+					name="description" required></textarea>
+			</div>
+
+			<div>
+				<input type="submit" value="Submit">
+			</div>
+
+
+		</form>
+	</fieldset>
+	<script src="script.js"></script>
+</body>
+</html>

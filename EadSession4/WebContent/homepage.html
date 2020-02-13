@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div{
+
+margin : 10px;}
+fieldset{
+
+width:50%;
+margin:auto}
+</style>
+
+<title>HomePage</title>
+</head>
+<body>
+	<div align="right">
+		<form action="logout?status=1" method="post">
+			<input type="submit" name="logout" value="Log Out">
+		</form>
+	</div>
+
+<fieldset>
+<form action="editDetails" method="post" align="center">
+	<div>Name</div>
+	<div>
+		<input type="text" name="empName" id="empName" readonly>
+	</div>
+	<div>Gender</div>
+	<div>
+		<input type="text" name="empGender" id="empGender" readonly>
+	</div>
+	<div>E- Mail Id</div>
+	<div>
+		<input type="text" name="empMail" id="empMail" readonly>
+	</div>
+	<div>Organization</div>
+	<div>
+		<input type="text" name="empOrganisation" id="empOrganisation" readonly>
+	</div>
+	
+	<div>EmployeeId</div>
+	<div>
+	<input type="text" name="empid" id="empid" readonly>
+	</div>
+
+	<div>VehicleName</div>
+	<div>
+	<input type="text" name="empVehicleName" id="empVehicleName" readonly>
+	</div>
+ 
+	<div>VehicleType</div>
+	<div>
+	<input type="text" name="empVehicleType" id="empVehicleType" readonly>
+	</div>
+	
+	<div>VehicleNumber</div>
+	<div>
+	<input type="text" name="empVehicleNumber" id="empVehicleNumber" readonly>
+	</div>
+ 
+
+<div>
+<input type = "button" value ="Edit" onclick="display()">
+
+
+<input type = "submit" value="Submit">
+</div>
+
+</form>
+
+<form action = "friends" method="post" align="center">
+<input id="friends" type="submit" name="friends" value="Friends"></form>
+	<script src="script.js"></script>
+	</fieldset>
+</body>
+</html>
