@@ -1,0 +1,11 @@
+spring:
+  mvc:
+   view:
+    prefix: /
+    suffix: .jsp
+  datasource: 
+   driverClassName : com.mysql.jdbc.Driver
+   url: jdbc:mysql://localhost:3306/employeedatabase
+   username: root
+   password: sql   
+  
