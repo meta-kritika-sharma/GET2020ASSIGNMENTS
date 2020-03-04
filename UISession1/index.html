@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--meta content-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--title of page-->
+    <title>Metacube Parking System</title>
+</head>
+
+<body>
+    <div align="center">
+        <nav class='navigation_bar'>
+            <a href="#addEmployee">Add Employee</a>
+            <a href="#addVehicle">Add Vehicle</a>
+            <a href="#feedback">Give Feedback</a>
+            <a href="#pricing">Pricing</a>
+        </nav>
+        <div>
+            <img src="parkingIcon.png" id="parking_icon">
+        </div>
+
+        <!--Form to add employee details-->
+        <div id="addEmployee">
+            <h2>Employee Details</h2>
+            <form id="employeeDetailsForm">
+                <div>
+                    <span>Full Name</span>
+                    <input type="text" placeholder="Enter name" name="fullName" id="fullName" pattern="[a-z ]*[A-Z ]*$" required>
+                </div>
+                <div>
+                    <span>Gender</span>
+                    <label>
+                    <input type="radio" name="gender" value="Male" id="gender">Male 
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="FeMale" id="gender">FeMale 
+                    </label>
+                </div>
+                <div>
+                    <span>E-Mail</span>
+                    <input type="email" placeholder="Enter mail id" name="mail" id="mail" required>
+                </div>
+                <div>
+                    <span>Password</span>
+                    <input type="password" placeholder="Enter password" name="password" id="password" required>
+                </div>
+                <div>
+                    <span>Confirm Password</span>
+                    <input type="password" placeholder="Re-Enter your password" name="confirmPassword" id="confirmPassword" required>
+                </div>
+                <div>
+                    <span>Contact Details</span>
+                    <input type="tel" placeholder="Enter contact details" name="contact" id="contact" required>
+                </div>
+                <div>
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+
+        <!--Form to add vehicle details-->
+        <div id="addVehicle">
+            <h2>Vehicle Details</h2>
+            <form id="vehicleDetailsForm">
+                <div>
+                    <span>Vehicle Company</span>
+                    <input type="text" placeholder="Enter company of vehicle" name="vehicleCompany" id="vehicleCompany" required>
+                </div>
+                <div>
+                    <span>Vehicle Model</span>
+                    <input type="text" placeholder="Enter vehicle model" name="vehicleModel" id="vehicleModel" required>
+                </div>
+                <div>
+                    <span>Vehicle Type</span>
+                    <select name="vehicleType" id="vehicleType">
+                        <option selected disabled>Select vehicle type</option>
+                        <option value="Cycle">Cycle</option>
+                        <option value="MotorCycle">MotorCycle</option>
+                        <option value="FourWheeler">FourWheeler</option>
+                    </select>
+                </div>
+                <div>
+                    <span>Vehicle Number</span>
+                    <input type="text" placeholder="Enter vehicle Number" name="vehicleNumber" id="vehicleNumber" required>
+                </div>
+                <div>
+                    <span>Employee Id</span>
+                    <input type="text" placeholder="Enter employee Id" name="empId" id="empId">
+                </div>
+
+                <div>
+                    <span>Description</span>
+                    <textarea placeholder="Enter Description" name="description" id="description"></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+
+            <!--Form to add feedback-->
+            <div id="feedback">
+                <h2>FeedBack</h2>
+                <form id="feedbackForm">
+                    <div>
+                        <input type="text" placeholder="Name" name="feedbackName" id="feedbackName" required>
+                    </div>
+                    <div>
+                        <input type="email" placeholder="E-Mail" name="feedbackMail" id="feedbackMail" required>
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Subject" name="feedbackSubject" id="feedbackSubject" required>
+                    </div>
+                    <div>
+                        <textarea name="feedbackDescription" placeholder="Message" id="feedbackDescription" required></textarea>
+                    </div>
+                    <div>
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+
+            <!--Pricing details-->
+            <div id="pricing">
+                <h2> Pricing Details</h2>
+
+                <!--Cycle Price-->
+                <div>
+                    <h3>Cycle</h3>
+                    <div>
+                        <span><b>$100/month</b></span>
+                    </div>
+                    <div>
+                        <p><span>$5 Daily</span></p>
+                        <p><span>$100 Monthly</span></p>
+                        <p><span>$500 Yearly</span></p>
+                    </div>
+                    <div>
+                        <input type="button" value="Purchase Now">
+                    </div>
+                </div>
+
+                <!-- Motorcycle Price -->
+                <div>
+                    <h3>MotorCycle</h3>
+                    <div>
+                        <span><b>$200/month</b></span>
+                    </div>
+                    <div>
+                        <p><span>$10 Daily</span></p>
+                        <p><span>$200 Monthly</span></p>
+                        <p><span>$1000 Yearly</span></p>
+                    </div>
+                    <div>
+                        <input type="button" value="Purchase Now">
+                    </div>
+                </div>
+
+                <!--FourWheeler Price-->
+                <div>
+                    <h3>Four Wheeler</h3>
+                    <div>
+                        <span><b>$500/month</b></span>
+                    </div>
+                    <div>
+                        <p><span>$20 Daily</span></p>
+                        <p><span>$500 Monthly</span></p>
+                        <p><span>$3500 Yearly</span></p>
+                    </div>
+                    <div>
+                        <input type="button" value="Purchase Now">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    </div>
+</body>
+
+</html>
