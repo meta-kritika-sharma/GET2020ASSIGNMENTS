@@ -1,0 +1,360 @@
+.headerFlex,
+.homeFlex,
+.featureFlex,
+.sliderImageFlex,
+.cloudFlex,
+.sunnyFlex,
+.rainyFlex,
+.temperature,
+.footerFlex,
+#usabilityFeature,
+#parallaxFeature,
+#unlimitedColorsFeature,
+#reviews,
+#downloadSection
+{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.headerFlex, .footerFlex, .featureFlex, .sliderImageFlex {
+    justify-content: space-around;
+}
+
+.homeFlex {
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.featureFlex{
+    margin: auto;
+    padding-right: 16%;
+    padding-left: 16%;
+    margin-bottom: 60px;
+}
+
+.cloudFlex,.rainyFlex{
+    margin-left: 10%;
+    padding-left: 8%;
+    padding-right: 8%;
+    margin-right: 10%;
+    margin-bottom: 50px;
+}
+
+.sunnyFlex{
+    margin-bottom: 50px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+    background-image: url(images/bodybg.png);
+    overflow-x: hidden;
+}
+
+.headerAndHome {
+    background-image: url('images/homebg.png');
+    background-size: 100% 100%;
+    margin-bottom: 70px;
+}
+
+.headerNavLinks,
+.headerSocialLinks,
+.footerNavLinks,
+.footerSocialLinks {
+    text-decoration: none;
+    color: antiquewhite;
+    padding: 10px;
+}
+
+.homeImageBlock,
+.heading {
+    width: 50%;
+}
+
+.heading{
+    padding-left: 9%;
+}
+
+.homeHeading {
+    color: white;
+    font-size: 4em;
+    margin-top: 7%;
+}
+
+.homeImage {
+    transform: scale(0.9);
+}
+
+.homeButtons {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+#downloadButton {
+    background-color: tomato;
+    margin-right: 20px;
+}
+
+#featureButton {
+    background-color: navy;
+} 
+
+#featureHeading, #reviewHeading{
+    color: cornflowerblue;
+    margin-bottom: 5px;
+}
+
+#features,#review{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+#onlyNecessary,#reviewText{
+    color: grey;
+    margin-bottom: 50px;
+}
+
+.featureImages{
+    height: 3em;
+}
+
+.featureContent{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.featureTitle{
+    margin-bottom: 10px;
+}
+
+.featureText{
+    font-size: 14px;
+    color: grey;
+}
+
+.sliderImageFlex{
+    margin-bottom: 60px;        
+}
+
+.sliderImage{
+    width: 15%;
+    box-shadow: 0 0 10px 4px rgb(189, 179, 179);
+}
+
+#screenshots{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+#screenshotHeading{
+    color: cornflowerblue;
+    margin-bottom: 10px;
+}
+
+#screenshotContent{
+    color: grey;
+    margin-bottom: 70px;
+}
+
+#cloudImageAndText, #rainImageAndText{
+    padding-top: 12%;
+    padding-left: 20%;
+}
+
+#sunImageAndText{
+    padding-top: 12%;    
+}
+
+#cloudImage, #cloudHeading,#rainImage, #rainHeading,#sunImage,#sunHeading{
+    margin-bottom: 20px;
+}
+
+#cloudy,#sunny,#rainy{
+    transform: rotate(90deg);
+    display: inline-block;
+    width: fit-content;
+    height: fit-content;
+    color: gray;
+    padding-left:27%;
+    font-size: 200px;
+    position: absolute;
+    z-index: -1;
+    opacity: 25%;
+}
+
+#cloudy{
+    margin-left: -180px;
+}
+#rainy{
+    margin-left: -120px;
+}
+
+#sunny{
+    margin-left: 600px;
+}
+
+#reviewColumn1, #reviewColumn2{
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+}
+
+.reviewContent{
+    color: rgb(11, 11, 48);
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.reviewWriter{
+    color:rgb(11, 11, 48);
+}
+
+#sunImageAndText{
+    width: 30%;
+    padding: 13%;
+}
+
+#firstReview, #secondReview, #thirdReview, #fourthReview
+{
+padding: 5%;
+}
+
+#downloadSection{
+    background-image: url(images/homebg.png);
+}
+
+#downloads{
+    padding: 5%;
+    padding-top: 8%;
+}
+
+#downloadHeading, #downloadContent, #downloadImages{
+    margin: 20px;
+    color: white;
+}
+
+#footer{
+    background-color: #101736;
+}
+
+#copyright{
+    text-align: center;
+    color: grey;
+}
+
+.sliderImageFlex > .sliderImage:nth-child(2){
+    transform: rotateY(-5deg) skewY(-5deg) translateX(110px) translateY(20px) scale(0.9);
+    transform-origin: left;
+    z-index: -1;
+}
+
+.sliderImageFlex > .sliderImage:nth-child(1){
+    transform: rotateY(-5deg) skewY(-5deg) translateX(230px) translateY(40px) scale(0.8);
+    transform-origin: left;
+    z-index: -1;
+}
+
+.sliderImageFlex > .sliderImage:nth-child(4){
+    transform: rotateY(5deg) skewY(5deg) translateX(-80px) translateY(5px) scale(0.9);
+    transform-origin: left;
+    z-index: -1;
+}
+
+.sliderImageFlex > .sliderImage:nth-child(5){
+    transform: rotateY(5deg) skewY(5deg) translateX(-180px) translateY(30px) scale(0.8);
+    transform-origin: left;
+    z-index: -2;
+}
+
+.footerFlex{
+    padding: 50px;
+}
+
+#footer_image{
+    width: 1050px;
+    margin: auto;
+}
+
+#copyright{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.closeQuote{
+    float: right;
+}
+
+.cloudSpecs,.sunSpecs,.rainSpecs{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border-style: dashed;
+    border-color: rgb(211, 207, 207);
+    font-size: 16px;
+    text-align: center;
+    padding: 15px;
+    padding-right: 25px;
+    background-color: white;
+}
+
+#percentageCloud,#percentageSun,#percentageRain{
+    z-index: 3;
+}
+#degreeCloud,#degreeSun,#degreeRain{
+    z-index: 2;
+    margin-left: -15px;
+}
+#weatherCloud,#weatherSun,#weatherRain{
+    z-index: 1;
+    margin-left: -15px;
+}
+
+.temperature{
+    padding-left: 0;
+    padding-top: 20px;
+}
+
+.weatherCircle{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(252, 235, 86);
+    text-align: center;
+    padding: 13px;
+    padding-right: 20px;
+    padding-top: 20px;
+    color: white;
+    text-align: center;
+    margin-left: -18px;
+    margin-top: 21%;
+}
+
+#weatherSunny{
+    margin-top: 12%;
+    background-color: rgb(235, 157, 129);
+}
+
+#weatherRainy{
+    background-color: rgb(131, 247, 247);
+}
+
+.screenContent{
+    color: grey;
+    font-size: 18px;
+}
