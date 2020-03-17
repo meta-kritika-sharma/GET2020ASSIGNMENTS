@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <!--meta content-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--title of page-->
+        <title>Metacube Parking System</title>
+        <!--Bootstrap css file-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/1f1f9aaea7.js " crossorigin="anonymous "></script>
+    </head>
+
+    <body>
+        <!--Navigation bar-->
+        <nav class="navbar p-0">
+            <div class="nav-item">
+                <a href="#" class="nav-link text-white p-4" onclick="employeeDetails()">Add Employee</a>
+            </div>
+        </nav>
+
+        <!--To display message-->
+        <label id="messageField" class="text-center m-5 formElement">Enter your name</label>
+
+        <!--Employee registration form-->
+        <form id="employeeRegistrationForm" class="container w-50">
+            <div class="form-group row justify-content-center formdiv">   
+                <input type="text" class="form-control m-2 formElement" id="employeeName" placeholder="Enter name">
+                <div id="employeeGender" class="form-control m-2 formElement">
+                    <label class="radio-inline" id="maleRadioLabel">
+                        <input type="radio" name="gender" id="maleRadio">Male
+                    </label>
+                    <label class="radio-inline" id="femaleRadioLabel">
+                        <input type="radio" name="gender" id="femaleRadio">FeMale
+                    </label>
+                </div>
+                <input type="email" class="form-control m-2 formElement" id= "employeeMail" placeholder="Enter mail">
+                <input type="password" class="form-control m-2 formElement" id="employeePassword" placeholder="Enter password" onkeyup="return validateEmployeePassword()">
+                <input type="password" class="form-control m-2 formElement" id="confirmPassword" placeholder="Re-Enter password"> 
+                <input type="number" class="form-control m-2 formElement" id="contact" placeholder="Enter contact details">   
+                <input type="button" class="form-control m-2 formElement" id="submitButton" value="Submit" onclick="vehicleDetails()">      
+            </div>
+        </form>
+
+        <!--Vehicle registration form-->
+        <form id="vehicleRegistrationForm" class="container w-50">
+            <div class="form-group row justify-content-center formdiv">
+                <input type="text" class="form-control m-2 formElement" id="employeeId" value="Employee id : 1" disabled>
+                <input type="text" class="form-control m-2 formElement" id="vehicleName" placeholder="Enter name" required>
+                <select class="form-control m-2 formElement" id="vehicleType">
+                    <option selected disabled hidden>Choose vehicle</option>
+                    <option value="cycle">Cycle</option>
+                    <option value="motorcycle">Motor Cycle</option>
+                    <option value="fourwheeler">FourWheeler</option>
+                </select>
+                <input type="text" class="form-control m-2 formElement" id="vehicleNumber" placeholder="Enter vehicle number">
+                <textarea class="form-control m-2 formElement" id="description" placeholder="Enter description"></textarea>
+                <input type="button" class="form-control m-2 formElement" id="submitVehicle" value="Submit" onclick="passDetails()">
+            </div>
+        </form>
+
+        <!--Form showing pass choices-->
+        <form id="passForm" class="container w-50 formElement">
+            <div class="form-group row justify-content-center formdiv p-3" id="passDiv">
+                <div id="passChoice">
+                    <div class="form-group">
+                        <label class="mr-4 w-25">
+                            <input type="radio" name="pass" id="dailyPassRadio" checked="true">Daily
+                        </label>
+                        <input type="text" id="dailyPass" disabled>    
+                    </div>
+                    <div class="form-group">
+                        <label class="mr-4 ">
+                        <input type="radio" name="pass" id="monthlyPassRadio" class="p-2">Monthly
+                    </label>
+                        <input type="text" id="monthlyPass" disabled>
+                    </div>
+                    <div class="form-group">
+                        <label class="mr-4 w-25">
+                        <input type="radio" name="pass" id="yearlyPassRadio">Yearly
+                    </label>
+                        <input type="text" id="yearlyPass" disabled>
+                    
+                    </div>
+                    <input type="button" class= "form-control m-2" value="INR" onclick="toInr()">
+                    <input type="button" class= "form-control m-2" value="USD" onclick="toUsd()">
+                    <input type="button" class= "form-control m-2" value="YEN" onclick="toYen()">
+                    <input type="button" class="form-control m-2 formElement" id="getPass" value="Get Pass" onclick="return validateShowPass()">
+                </div>
+            </div>
+        </form>
+                <p id="passValue" class="text-center formElement"></p>
+
+    <script src="script.js"></script>
+    </body>
+</html>
