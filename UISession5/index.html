@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Meta contents-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--Title of the page-->
+        <title>
+            Bootstrap Layout
+        </title>
+        <!--Bootstrap css file-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/1f1f9aaea7.js " crossorigin="anonymous "></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <!--Header section-->
+            <header class="d-flex justify-content-between align-items-center p-2 border-bottom">
+                <a href="" class="text-muted">Subscribe</a>
+                <h1><a href="" class="text-dark font-weight-bold h1">Large</a></h1>
+                <div>
+                    <i class="fas fa-search p-2"></i>
+                    <button class="btn btn-outline-secondary">Sign up</button>
+                </div>
+            </header>
+
+            <!--Navigation bar-->
+            <nav class="navbar">
+                <a href="#" class="text-muted">World</a>
+                <a href="#" class="text-muted">U.S.</a>
+                <a href="#" class="text-muted">Technology</a>
+                <a href="#" class="text-muted">Design</a>
+                <a href="#" class="text-muted">Culture</a>                    
+                <a href="#" class="text-muted">Business</a>
+                <a href="#" class="text-muted">Politics</a>
+                <a href="#" class="text-muted">Opinion</a>
+                <a href="#" class="text-muted">Sceince</a>
+                <a href="#" class="text-muted">Health</a>
+                <a href="#" class="text-muted">Style</a>
+                <a href="#" class="text-muted">Travel</a>
+            </nav>
+
+            <!--Banner below the naivagtion bar-->
+            <div class="jumbotron mt-2 bg-dark text-white p-5">
+                <div class="row pl-2">
+                    <div class="col-6">
+                        <h1 class="display-4 font-italic">
+                            Title of a longer featured blog post
+                        </h1>
+                        <p class="lead text-white"> 
+                            Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents.
+                        </p>
+                        <a href="#" class="lead text-white font-weight-bold">Continue reading...</a>
+                    </div>
+                </div>
+            </div>
+
+            <!--Cards-->
+            <div class="row">
+                <div class="col-6">
+                    <!--First card-->
+                    <div class="card d-flex flex-row">
+                        <div class="card-body">
+                            <p class="font-weight-bold text-primary">World</p>
+                            <h3 class="mb-0 font-weight-bold">Featured Post</h3>
+                            <p class="text-muted">Nov 12</p>
+                            <p>This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                            <a href="#">Continue reading</a>
+                        </div>
+                        <div> 
+                            <img class="card-img-right width" src="thumbnail.svg">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <!--second card-->
+                    <div class="card d-flex flex-row">
+                        <div class="card-body">
+                            <p class="font-weight-bold text-success">Design</p>
+                            <h3 class="mb-0 font-weight-bold">Post Title</h3>
+                            <p class="text-muted">Nov 11</p>
+                            <p>This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                            <a href="#" class="card-link ">Continue reading</a>
+                        </div>
+                        <div> 
+                            <img class="card-img-right width" src="thumbnail.svg">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row pt-4">
+                <div class="col-8">
+                    <h3 class="border-bottom font-italic font-weight-bold pb-3">From the Firehouse</h3>
+
+                <!--First blog post Contents-->    
+                <div class="border-bottom pt-1 pb-1 mt-3">
+
+                    <!--Blog heading-->
+                    <h1 class="font-weight-bold">Sample Blog Post</h1>
+                    <p class="text-muted">January 1, 2014 by <a href="#">Mark</a></p>
+                    <p>This blog post shows a few different types of content that's supported and styled with Bootstrap. Basic typography, images, and code are all supported.</p>
+                </div>
+
+                <div class="pt-3 pb-3">
+                    <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+                    <blockquote>
+                      <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    </blockquote>
+                    <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+                    <h2 class="font-weight-bold">Heading</h2>
+                    <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                    <h3 class="font-weight-bold">Sub-heading</h3>
+                    <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                    <pre><code>Example code block</code></pre>
+                    <p>Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
+                    <h3 class="font-weight-bold">Sub-heading</h3>
+                    <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                    <ul>
+                      <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
+                      <li>Donec id elit non mi porta gravida at eget metus.</li>
+                      <li>Nulla vitae elit libero, a pharetra augue.</li>
+                    </ul>
+                    <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
+                    <ol>
+                      <li>Vestibulum id ligula porta felis euismod semper.</li>
+                      <li>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</li>
+                      <li>Maecenas sed diam eget risus varius blandit sit amet non magna.</li>
+                    </ol>
+                    <p>Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.</p>
+                  </div>
+        
+                  <!--Second blog post contents-->
+                  <div class="pt-4 mt-2">
+                    <!--Blog heading-->
+                    <h1 class="font-weight-bold">Another blog post</h2>
+                    <p class="text-muted">December 23, 2013 by <a href="#">Jacob</a></p>
+                    <p class="pt-3">Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+                    <blockquote>
+                      <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    </blockquote>
+                    <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+                    <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                  </div>
+        
+                  <div class="pt-5 mt-2">
+                    <h1 class="font-weight-bold">New feature</h2>
+                    <p class="text-muted">December 14, 2013 by <a href="#">Chris</a></p>
+        
+                    <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                    <ul>
+                      <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
+                      <li>Donec id elit non mi porta gravida at eget metus.</li>
+                      <li>Nulla vitae elit libero, a pharetra augue.</li>
+                    </ul>
+                    <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+                    <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
+                </div>
+
+                <div class="mt-4 pt-4 pb-4 mb-3 ">
+                    <button class="btn badge-pill text-primary border border-primary">Older</button>
+                    <button class="btn badge-pill text-muted border border-muted">Newer</button>
+                </div>
+
+                
+                </div>
+
+                <!--Aside section-->
+                <aside class="col-4">
+                    <div class="jumbotron p-4 bg-light">
+                        <h4 class="font-italic">About</h4>
+                        <p>Etiam porta <span class="font-italic">sem malesuada magna </span> euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+                    </div>          
+                    <div class="p-0 pl-4">
+                        <h3 class="font-italic font-weight-bold">Archives</h3>
+                        <ol class="list-unstyled">
+                            <li><a href="#">March 2014</a></li>
+                            <li><a href="#">February 2014</a></li>
+                            <li><a href="#">January 2014</a></li>
+                            <li><a href="#">December 2013</a></li>
+                            <li><a href="#">November 2013</a></li>
+                            <li><a href="#">October 2013</a></li>
+                            <li><a href="#">September 2013</a></li>
+                            <li><a href="#">August 2013</a></li>
+                            <li><a href="#">July 2013</a></li>
+                            <li><a href="#">June 2013</a></li>
+                            <li><a href="#">May 2013</a></li>
+                            <li><a href="#">April 2013</a></li>
+                        </ol>
+                    </div>
+
+                    <div class="p-0 pl-4 pt-2">
+                        <h3 class="font-italic font-weight-bold">Elsewhere</h3>
+                        <ol class="list-unstyled">
+                            <li><a href="#">Github</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Facebook</a></li>
+                        </ol>
+                    </div>
+                </aside>
+            </div> 
+        </div>
+
+        <!--Footer Section-->
+        <footer class="border-top text-center p-5 bg-light">
+            <p class="text-muted">Blog Template built for Bootstrap<a href="#"> by <a href="#">@mdo</a></p>
+            <a href="#">Back to top</a>
+        </footer>
+    </body>
+</html>
