@@ -1,0 +1,37 @@
+nav {
+    background-color: #2c2828;
+    /* padding: 20px; */
+    /* width: 100%; */
+    /* position: fixed;
+    top: 0;
+    left: 0; */
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav a:hover {
+    background-color: #948787;
+}
+
+/* #messageField,#employeeName, #employeeGender,
+#employeeMail, #employeePassword, #confirmPassword, #contact, #submitButton, #employeeId,
+#vehicleName, #vehicleNumber, #description, #vehicleType, #passForm, #submitVehicle, #passValue,
+{
+    display: none;
+} */
+
+.formElement{
+    display: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.formdiv{
+    background-color: #948787;
+}
