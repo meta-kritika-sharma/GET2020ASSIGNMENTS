@@ -1,0 +1,200 @@
+a:hover{
+    text-decoration: none;
+}
+
+.nav-item.active{
+    background-color: #e7e9fc;
+}
+
+
+/* Text colour of link items in left side bar */
+ul > li > a,
+ul > li > ul > li >a,
+.dropdownMenu>div>a{
+    color: rgba(45, 59, 72, 0.8);
+}
+
+#titleMain, #titleComponent, #titleExtra{
+    font-size: 14px;
+}
+
+nav{
+    background-color:#5b6be8;
+}
+
+#searchDiv, #searchText{
+    background-color: #6d7beb;
+    border: #6d7beb;
+    border-radius: 30px;
+}
+
+input.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#badgeMail, #badgeNotification{
+    /* if position not used , then badge appearing behind icon */
+    position: relative;
+    float: right;
+    margin-top: -10px;
+    margin-left: -8px;
+}
+
+.far.fa-envelope, .far.fa-bell{
+    font-size: 1.2em;
+}
+
+#imageAvatar{
+    height: 2.5em;
+}
+
+
+/* Styling left sidebar  */
+#scrollableDiv{
+    position: relative;
+    height: 60%;
+    overflow: auto;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(197, 194, 194);
+    border-radius: 10px;
+}
+
+.iconClass{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+}
+
+.mainContent{
+    background-color: #e3e7e9;
+    overflow: auto;
+
+}
+
+.navbar{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.countriesDropdown{
+    margin-left: -60%;
+}
+
+.dropdownMenu{
+    width: 490%;
+    font-size: 13px;
+}
+
+.dropdownMenu > div > a >div>div> span{
+    font-weight: bold;
+}
+
+.breadcrumb{
+    background-color: #e3e7e9;
+}
+
+.roundIcon{
+    background-color: #e7e9fc;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    line-height: 60px;
+    text-align: center;
+}
+
+.bg-facebook, .bg-primary{
+    background-color: #5b6be8;
+}
+
+.bg-twitter, .bg-info{
+    background-color: #40a4f1;
+}
+
+.text-usa, .text-info{
+    color: #40a4f1;
+}
+.text-canada, .text-primary{
+    color: #5b6be8;
+}
+.text-london, .text-secondary{
+    color: #c1c5e2;
+}
+
+.social-card{
+    height: 240px;
+    box-shadow: 0 0 0 white;
+}
+
+.social-figures{
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.verticle .carousel-item-next.carousel-item-left,
+.verticle .carousel-item-prev.carousel-item-right {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.verticle .carousel-item-next,
+.verticle .active.carousel-item-right {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100% 0);
+}
+
+.verticle .carousel-item-prev,
+.verticle .active.carousel-item-left {
+    -webkit-transform: translate3d(0,-100%, 0);
+        transform: translate3d(0,-100%, 0);
+}
+
+.profiles .avatar{
+    width: 50px;
+}
+
+.profiles .flag{
+    width: 30px;
+    float: left;
+}
+
+.profiles td{
+    padding: 14px 12px;
+    vertical-align: middle;
+}
+
+.profiles > tbody > tr:hover{
+    background-color: #eff3f6;
+}
+
+.profiles .text-muted{
+    font-size: small;
+}
+
+.profiles ul{
+    height: 432px;
+}
+
+.scrollbar::-webkit-scrollbar{
+    width: 0.4em;
+}
+
+.scrollbar::-webkit-scrollbar:horizontal{
+    height: 0.4em;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+    background-color: lightgray;
+}
+
+footer{
+    background-color: #f9f9f9;
+    font-family: sans-serif;
+}
