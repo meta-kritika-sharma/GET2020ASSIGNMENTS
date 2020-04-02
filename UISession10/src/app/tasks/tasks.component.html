@@ -1,0 +1,14 @@
+<div class="card mt-2" cdkDropList [id]="status.split(' ').join('')"
+    (cdkDropListDropped)="onDrop($event)"
+    [cdkDropListData]="tasks"
+    [cdkDropListConnectedTo]="getOtherStatus()">
+    <div class="card-body">
+        <div class="card-title">{{status}}</div>
+        <div *ngIf="tasks.length === 0" class="emptyStatus my-5">
+            -- Empty --
+        </div>
+        <div *ngFor="let task of tasks" cdkDrag>
+            <app-task [task]="task" [status]="status" [tasks]="tasks"></app-task>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,10 @@
+<div class="card mt-2" [style]="getBackground()">
+    <div class="card-body">
+      <h5 class="card-title">{{task.title}}</h5>
+      <p class="card-text">{{task.description}}</p>
+      <p class="card-text"><span class="property">Creation Date:</span>{{task.creationDate.toDateString()}}</p>
+      <p class="card-text"><span class="property">Completion Date:</span>{{task.completionDate.toDateString()}}</p>
+      <button class="btn btn-primary mr-2" *ngIf="status !== 'Completed'" (click)="openEditTask(task)">Edit</button>
+      <button class="btn btn-danger" (click)="deleteTask(task.id)">Delete</button>
+    </div>
+</div>
