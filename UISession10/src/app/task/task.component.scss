@@ -1,0 +1,12 @@
+.property{
+    display: block;
+    font-weight: bold;
+}
+
+.card{
+    cursor: grab;
+}
+
+.card:active, .card:focus{
+    cursor: grabbing;
+}
